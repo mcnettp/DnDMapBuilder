@@ -1,0 +1,44 @@
+.wrapper {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    text-align: center;
+    margin-top: 20px; /* Adjust the margin based on your design preference */
+}
+
+.map-cont {
+    display: grid;
+    grid-gap: 0px;
+    border: 1px solid black;
+    max-width: fit-content;
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+}
+
+.square {
+    width: 35px;
+    height: 35px;
+    background-color: var(--square-color, #ffffff);
+    cursor: pointer;
+    border: 1px solid black
+}
+
+label, input, button {
+    margin: 5px;
+}
+
+button {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#container {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+}
+
+#colorPicker {
+    width: 50px;
+    height: 50px;
+}

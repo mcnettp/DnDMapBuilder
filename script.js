@@ -104,6 +104,7 @@ function createMap()
         {
             //console.log("Mouse Move Hit");
             const squareUnderMouse = document.elementFromPoint(event.clientX, event.clientY);
+            selectedColor = pickedColor;
             if (squareUnderMouse.classList.contains('square'))
             {
                 const computedColor = window.getComputedStyle(squareUnderMouse).getPropertyValue('background-color');

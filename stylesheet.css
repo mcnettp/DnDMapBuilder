@@ -15,12 +15,29 @@
     justify-content: center; /* Center items horizontally */
 }
 
+/* When the grid is empty, hide the border and any stray rendering */
+.map-cont.empty {
+    border: none;
+    background: transparent;
+    min-width: 0;
+    min-height: 0;
+}
+
 .square {
     width: 35px;
     height: 35px;
     background-color: var(--square-color, #ffffff);
     cursor: pointer;
     border: 1px solid black
+}
+
+/* Prevent text selection and native dragging while painting */
+.square {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
 }
 
 label, input, button {

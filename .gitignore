@@ -1,0 +1,14 @@
+# Ignore downloaded vendor files for offline use
+vendor/
+
+# Common editor / system files
+.vscode/
+*.log
+.DS_Store
+Thumbs.db
+
+# Node/npm
+node_modules/
+
+# Archive artifacts
+*.zip

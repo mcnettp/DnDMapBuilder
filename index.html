@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <title>Dungeons and Dragons Map Maker</title>
         <link rel="stylesheet" href="stylesheet.css">
-        <script src="https://cdn.jsdelivr.net/npm/@jscolor/picker@2.3.1/build/jscolor.min.js"></script>
-        <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+        <script src="vendor/js/jscolor.min.js"></script>
+        <script src="vendor/js/html2canvas.min.js"></script>
     </head>
     
     <body>
@@ -18,10 +18,11 @@
             <button onclick="saveMapAsJpg()">Save as JPG</button>
             <label id="selectedColor">Selected Color: #000000</label>
             <input type="color" id="colorPicker" onchange="updateColor(this.value)">
+            <button id="fill_button" onclick="fillCanvas()">Fill Canvas</button>
         </div>
 
         <div class="wrapper">
-            <div class="map-cont" id="grid">
+            <div class="map-cont empty" id="grid">
                 <!-- Map Generated Here -->
             </div>
         </div>
@@ -29,3 +30,4 @@
         <script src="script.js"></script>
     </body>
 </html>
+
